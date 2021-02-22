@@ -9,10 +9,16 @@ fn main() {
     // value that gets computed a runtime.
     // Constants are available everywhere in the program, and must be type annotated.
     const MAX_POINTS: u32 = 100_000;
+    println!("Max points: {}", MAX_POINTS);
 
     // Variables can be shadowed by using the same name and the let keyword.
     let y = 5;
     let y = y + 1;
     let y = y * 2;
     println!("The value of y is: {}", y);
+
+    // Unlike mut, shadowing allows you to change the type of value but reuse the name.
+    let spaces = "     ";
+    let spaces = spaces.len();
+    println!("Number of spaces in string is: {}", spaces);
 }
