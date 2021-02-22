@@ -5,6 +5,11 @@ fn main() {
     x = 6;
     println!("The value of x is: {}", x);
 
+    // Constants can only be a constant expression, not the result of a function  call or any other 
+    // value that gets computed a runtime.
+    // Constants are available everywhere in the program, and must be type annotated.
+    const MAX_POINTS: u32 = 100_000;
+
     // Variables can be shadowed by using the same name and the let keyword.
     let y = 5;
     let y = y + 1;
